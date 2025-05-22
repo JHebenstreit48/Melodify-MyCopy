@@ -14,4 +14,8 @@ export default defineConfig({
       },
     },
   },
+  build: {
+    outDir: 'dist',       // ✅ Netlify expects this
+    emptyOutDir: true     // Optional but helpful for cleaning previous builds
+  }
 });
